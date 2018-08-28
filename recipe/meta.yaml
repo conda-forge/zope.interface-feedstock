@@ -1,21 +1,16 @@
-{% set name = "zope.interface" %}
 {% set version = "4.5.0" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "57c38470d9f57e37afb460c399eb254e7193ac7fb8042bd09bdc001981a9c74c" %}
 
 package:
-  name: {{ name|lower }}
+  name: zope.interface
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ file_ext }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  {{ hash_type }}: {{ hash_value }}
+  url: https://pypi.io/packages/source/z/zope.interface/zope.interface-{{ version }}.tar.gz
+  sha256: 57c38470d9f57e37afb460c399eb254e7193ac7fb8042bd09bdc001981a9c74c
 
 build:
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed . --verbose
+  number: 1
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
@@ -52,3 +47,4 @@ about:
 extra:
   recipe-maintainers:
     - isuruf
+    - ocefpaf
