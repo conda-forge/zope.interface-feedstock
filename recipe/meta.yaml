@@ -1,4 +1,4 @@
-{% set version = "4.7.1" %}
+{% set version = "5.0.0" %}
 
 package:
   name: zope.interface
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/z/zope.interface/zope.interface-{{ version }}.tar.gz
-  sha256: 4bb937e998be9d5e345f486693e477ba79e4344674484001a0b646be1d530487
+  sha256: 9da542aa8fb13671e3aa03722cf479dc3611a4e767de256629d609bcb2e99285
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   build:
@@ -33,7 +33,7 @@ test:
 
 about:
   home: http://docs.zope.org/zope.interface/
-  license: ZPL 2.1
+  license: ZPL-2.1
   license_family: Other
   license_file: LICENSE.txt
   summary: Interfaces for Python
