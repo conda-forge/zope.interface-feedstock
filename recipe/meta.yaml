@@ -10,7 +10,7 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -20,6 +20,7 @@ requirements:
     - pip
   run:
     - python
+    - setuptools
 
 test:
   imports:
@@ -30,6 +31,10 @@ test:
     - zope.interface.common.mapping
     - zope.interface._zope_interface_coptimizations
     - zope.interface.tests
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://docs.zope.org/zope.interface/
