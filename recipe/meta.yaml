@@ -29,7 +29,7 @@ test:
     - zope.interface.common
     - zope.interface.common.tests
     - zope.interface.common.mapping
-    - zope.interface._zope_interface_coptimizations
+    - zope.interface._zope_interface_coptimizations  # [python_impl != "pypy"]
     - zope.interface.tests
   commands:
     - pip check
