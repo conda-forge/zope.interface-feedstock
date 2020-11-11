@@ -1,4 +1,4 @@
-{% set version = "5.1.2" %}
+{% set version = "5.2.0" %}
 
 package:
   name: zope.interface
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/z/zope.interface/zope.interface-{{ version }}.tar.gz
-  sha256: c9c8e53a5472b77f6a391b515c771105011f4b40740ce53af8428d1c8ca20004
+  sha256: 8251f06a77985a2729a8bdbefbae79ee78567dddc3acbd499b87e705ca59fe24
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
