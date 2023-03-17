@@ -1,11 +1,11 @@
-About zope.interface
-====================
+About zope.interface-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/zope.interface-feedstock/blob/main/LICENSE.txt)
 
 Home: http://docs.zope.org/zope.interface/
 
 Package license: ZPL-2.1
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/zope.interface-feedstock/blob/main/LICENSE.txt)
 
 Summary: Interfaces for Python
 
