@@ -1,4 +1,4 @@
-{% set version = "6.3" %}
+{% set version = "6.4.post0" %}
 
 package:
   name: zope.interface
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/z/zope.interface/zope.interface-{{ version }}.tar.gz
-  sha256: f83d6b4b22262d9a826c3bd4b2fbfafe1d0000f085ef8e44cd1328eea274ae6a
+  sha256: e7473d64b4b5e7c3c8f6cc4cd4753e796f3176adbf965d17e2bccf50b1274b10
 
 build:
   number: 0
@@ -17,6 +17,7 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
