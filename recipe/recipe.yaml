@@ -45,7 +45,9 @@ tests:
 
 about:
   license: ZPL-2.1
-  license_file: LICENSE.txt
+  license_file:
+    - LICENSE.txt
+    - COPYRIGHT.txt
   summary: Interfaces for Python
   description: |
     Provides an implementation of object interfaces for Python.Interfaces are objects
