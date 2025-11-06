@@ -42,11 +42,6 @@ tests:
         - zope.interface.common.mapping
         - zope.interface._zope_interface_coptimizations
         - zope.interface.tests
-  - requirements:
-      run:
-        - pytest
-    script:
-      - pytest -vv --tb=long --color=yes --pyargs zope.interface
 
 about:
   license: ZPL-2.1
