@@ -3,19 +3,16 @@ About zope.interface-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/zope.interface-feedstock/blob/main/LICENSE.txt)
 
-Home: http://docs.zope.org/zope.interface/
+Home: https://github.com/zopefoundation/zope.interface
 
 Package license: ZPL-2.1
 
 Summary: Interfaces for Python
 
-Development: https://github.com/zopefoundation/zope.interface
-
-Documentation: http://docs.zope.org/zope.interface/
+Documentation: https://zopeinterface.readthedocs.io/
 
 Provides an implementation of object interfaces for Python.Interfaces are objects
 that specify the external behavior of objects that provide them.
-
 
 Current build status
 ====================
