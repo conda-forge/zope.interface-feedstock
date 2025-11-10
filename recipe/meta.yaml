@@ -1,4 +1,4 @@
-{% set version = "8.0.1" %}
+{% set version = "8.1" %}
 
 package:
   name: zope.interface
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/z/zope.interface/zope_interface-{{ version }}.tar.gz
-  sha256: eba5610d042c3704a48222f7f7c6ab5b243ed26f917e2bc69379456b115e02d1
+  sha256: a02ee40770c6a2f3d168a8f71f09b62aec3e4fb366da83f8e849dbaa5b38d12f
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
